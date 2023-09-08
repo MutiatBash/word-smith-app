@@ -22,7 +22,7 @@ import { auth } from "../firebase";
 
 export default function Login({ navigation }) {
   const [isChecked, setChecked] = useState(false);
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { loading, setLoading } = useContext(AuthContext);
